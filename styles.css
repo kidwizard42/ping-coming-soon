@@ -1,0 +1,198 @@
+body{
+  font-family: 'Libre Franklin', sans-serif;
+}
+button{
+  margin: 10px 0;
+  border:none;
+  color:white;
+  background-color: #4f7df3;
+  cursor: pointer;
+}
+
+h1{
+  margin:40px;
+  font-size: 20px;
+}
+img{
+  max-width: 100%;
+  margin-top:20px;
+}
+input{
+  border:thin solid #c2d3ff;
+}
+input, button{
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+p{
+  color:#151f29;
+  font-size: 14px;
+}
+
+::placeholder{
+  color:#c2d3ff;
+}
+/* COLORS AND FONT  START */
+.bold{
+  font-weight: 700;
+}
+.black{
+  color:black;
+}
+.blue{
+  color:#4f7df3;
+}
+.darkBlue{
+  color:#151f29;
+}
+.gray{
+  color:#969696;
+}
+.lightRed{
+  color:#ff5263;
+}
+.paleBlue{
+  color:#c2d3ff;
+}
+.launch{
+  font-size:23px;
+}
+/* COLORS AND FONT  END */
+
+.container{
+  width:90%;
+  max-width:400px;
+  margin:0 auto;
+  text-align: center;
+}
+.container+ .container{
+  margin-top:40px;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+.form-section{
+  margin:0 auto;
+width:100%;
+max-width: 275px;
+}
+
+/* ICON LINKS */
+/* Atom says the fill property is unknown but DO NOT DELETE! It works.
+   Fill only works if you select the <path> tag inside the svg and add
+  a class to select it. You can have a " fill="" " before the d=""
+   but doesn't seem necessary. */
+.all-links-div{
+  margin: 97px auto 20px;
+  width:40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.svg-circle{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:30px;
+  width:30px;
+  border-radius:100%;
+  border:1px solid #4f7df3;
+  cursor:pointer;
+}
+.svg-fill{
+fill:#4f7df3;
+}
+.svg-design{
+  max-width:90%;
+  height:17px;
+}
+
+
+/* ICON LINKS FINISHED START*/
+
+
+/* INVALID EMAIL STYLES */
+.error{
+  border:thin solid #ff5263;
+}
+.errorText{
+  color:#ff5263;
+  font-size: 12px;
+  margin:10px auto;
+  font-style: italic;
+}
+.hide-error{
+  display: none;
+}
+/* INVALID EMAIL STYLES END*/
+
+
+.copyright{
+  width:90%;
+  max-width:400px;
+  margin:0 auto 30px;
+  text-align: center;
+}
+
+
+@media (min-width: 600px) {
+  h1{
+    font-size: 28px;
+  }
+  input, button{
+    font-size: 20px;
+  }
+  p{
+    font-size: 16px;
+  }
+.container{
+  max-width: 600px;
+}
+.all-links-div{
+  width:20%;
+}
+.launch{
+  font-size:30px;
+}
+}
+
+@media (min-width:900px) {
+  button{
+    width:150px;
+
+  }
+  input{
+    width:375px;
+    /* height:30px; */
+    /* padding: 5px 10px; */
+    margin-right:10px;
+  }
+
+  .form-section{
+    margin:0 auto;
+    max-width:100%;
+  }
+  .container{
+    /* border: 2px solid blue; */
+  }
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .errorText{
+  position: absolute;
+  bottom: -20px;
+  left:35px;
+  }
+  .svg-circle:hover > .svg-design >.svg-fill{
+    fill: white;
+  }
+  .svg-circle:hover{
+    background: #4f7df3;
+  }
+}
